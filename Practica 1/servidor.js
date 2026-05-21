@@ -14,7 +14,7 @@ console.time("miproceso")
 
 console.timeEnd("miproceso")
 
-/*Objetos tio tabla*/
+/*Objetos tipo tabla*/
 let usuarios = [
     {nombre: "Gabi", Edad:23},
     {nombre: "Isaias", Edad:21}
