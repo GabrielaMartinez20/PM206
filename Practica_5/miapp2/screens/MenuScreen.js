@@ -2,6 +2,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Button } from 'react-native';
 import React,{useState} from 'react';
+
 import TarjetasScreen from './TarjetasScreen';
 import SafeAreaScreen from './SafeAreaScreen';
 import PressableScreen from './PressableScreen';
@@ -37,15 +38,14 @@ export default function MenuScreen() {
             default:
              return (
                 <View style={styles.container}>
-                    <Text> Menu de Practicas </Text>
-                    <Button style={styles.button} onPress={()=>setScreen('tarjetas')} title='Tarjetas'/>
-                    <Button onPress={()=>setScreen('safeArea')} title='SafeAreaView'/>
-                    <Button onPress={()=>setScreen('pressable')} title='PressableView'/>
-                    <Button onPress={()=>setScreen('textInput')} title='TextInputView'/>
-                    <Button onPress={()=>setScreen('flatList')} title='FlatListView'/>
-                    <Button onPress={()=>setScreen('imageBackgroung')} title='ImagineBackgroungView'/>
-                    <Button onPress={()=>setScreen('activityIndicator')} title='ActivityIndicatorView'/>
-                    <Button onPress={()=>setScreen('modal')} title='ModalView'/>
+                    <Text style={styles.titulo}> Menu de Practicas </Text>
+                    <Button color='#8ece18' onPress={()=>setScreen('tarjetas')} title='Tarjetas'/>
+                    <Button color='#8ece18' onPress={()=>setScreen('safeArea')} title='SafeAreaView'/>
+                    <Button color='#8ece18' onPress={()=>setScreen('pressable')} title='PressableView'/>
+                    <Button color='#8ece18' onPress={()=>setScreen('textInput')} title='TextInputView'/>
+                    <Button color='#8ece18' onPress={()=>setScreen('flatList')} title='FlatListView'/>
+                    <Button color='#8ece18' onPress={()=>setScreen('imageBackgroung')} title='ImagineBackgroungView'/>                        <Button color='#8ece18' onPress={()=>setScreen('activityIndicator')} title='ActivityIndicatorView'/>
+                    <Button color='#8ece18' onPress={()=>setScreen('modal')} title='ModalView'/>
                     <StatusBar style="auto" />
                 </View>
             );
@@ -57,9 +57,18 @@ export default function MenuScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#b44ee7',
     alignItems: 'center',
     justifyContent: 'center',
-    flexDirection: 'column'
+    flexDirection: 'space-between',
+    padding: 30,
+    borderRadius: 20,
   },
+  titulo: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    color: 'white',
+    textAlign: 'center',
+  },
+  
 });
