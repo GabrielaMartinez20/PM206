@@ -8,7 +8,7 @@ import SafeAreaScreen from './SafeAreaScreen';
 import PressableScreen from './PressableScreen';
 import TextInputScreen from './TextInputScreen';
 import FlatListScreen from './FlatListScreen';
-import ImageBackgroungScreen from './SafeAreaScreen';
+import ImageBackgroundScreen from './ImageBackgroundScreen';
 import ActivityIndicatorScreen from './ActivityIndicatorScreen';
 import ModalScreen from './ModalScreen';
 
@@ -23,17 +23,17 @@ export default function MenuScreen() {
         case 'safeArea':
             return <SafeAreaScreen />
         case 'pressable':
-            return <Pressable />
+            return <PressableScreen/>
         case 'textInput':
-            return <TextInput />
+            return <TextInputScreen/>
         case 'flatList':
-            return <FlatList />
+            return <FlatListScreen/>
         case 'imageBackgroung':
-            return <ImageBackgroung />
+            return <ImageBackgroungScreen />
         case 'activityIndicator':
-            return <ActivityIndicator />
+            return <ActivityIndicatorScreen />
         case 'modal':
-            return <Modal />
+            return <ModalScreen />
         case 'menu':
             default:
              return (
