@@ -28,8 +28,8 @@ export default function MenuScreen() {
             return <TextInputScreen/>
         case 'flatList':
             return <FlatListScreen/>
-        case 'imageBackgroung':
-            return <ImageBackgroungScreen />
+        case 'imageBackground':
+            return <ImageBackgroundScreen />
         case 'activityIndicator':
             return <ActivityIndicatorScreen />
         case 'modal':
@@ -44,7 +44,8 @@ export default function MenuScreen() {
                     <Button color='#8ece18' onPress={()=>setScreen('pressable')} title='PressableView'/>
                     <Button color='#8ece18' onPress={()=>setScreen('textInput')} title='TextInputView'/>
                     <Button color='#8ece18' onPress={()=>setScreen('flatList')} title='FlatListView'/>
-                    <Button color='#8ece18' onPress={()=>setScreen('imageBackgroung')} title='ImagineBackgroungView'/>                        <Button color='#8ece18' onPress={()=>setScreen('activityIndicator')} title='ActivityIndicatorView'/>
+                    <Button color='#8ece18' onPress={()=>setScreen('imageBackground')} title='ImageBackgroundView'/>
+                    <Button color='#8ece18' onPress={()=>setScreen('activityIndicator')} title='ActivityIndicatorView'/>
                     <Button color='#8ece18' onPress={()=>setScreen('modal')} title='ModalView'/>
                     <StatusBar style="auto" />
                 </View>
